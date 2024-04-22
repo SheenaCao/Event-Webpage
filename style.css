@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0c0c0c;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 40px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; 
+}
+
+main .content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+main .activity-img {
+    height: 100px; 
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.gallery img {
+    width: calc(33% - 20px); 
+    margin: 10px;
+    height: auto;
+    display: inline-block;
+}
+
+.section-join input[type="text"],
+.section-join input[type="email"],
+.section-join input[type="submit"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        max-height: 400px;
+    }
+
+    .gallery img {
+        width: calc(50% - 20px); 
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

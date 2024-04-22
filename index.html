@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Friends Meetup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="images/1.jpg" alt="Dog Friends Meetup Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#meetups">Meetups</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#join">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <img src="images/2.jpg" alt="Dogs Playing Together" class="hero-image">
+        </div>
+    </header>
+    <main>
+        <section id="about" class="section-about">
+            <div class="content">
+                <h2>About The Event</h2>
+                <p>Explore the joy of meeting new furry friends at our Dog Friends Meetup. It’s a fantastic opportunity for your dog to socialize, play, and interact with other dogs while you meet fellow dog lovers in a friendly, relaxed environment.</p>
+            </div>
+        </section>
+        <section id="meetups" class="section-meetups">
+            <div class="content">
+                <h2>Meetup Activities</h2>
+                <p>Our meetups feature a variety of activities designed to encourage interaction and fun for both dogs and owners.</p>
+                <ul>
+                    <li>Group Dog Walks: A guided walk through scenic routes that are safe and enjoyable for all breeds.</li>
+                    <li>Play Dates: Scheduled play sessions in enclosed areas where dogs can play off-leash under supervision.</li>
+                    <li>Training Sessions: Group training sessions focusing on basic commands and social behavior, led by professional trainers.</li>
+                    <li>Photo Sessions: Capture the moment with professional photo sessions for you and your dog.</li>
+                </ul>
+                <div id="countdown">
+                    <p>Next Meetup in:</p>
+                </div>
+            </div>
+        </section>
+        <section id="photos" class="section-photos">
+            <div class="content">
+                <h2>Photo Gallery</h2>
+                <p>Take a look at some of the memorable moments from our past meetups.</p>
+                <div class="gallery">
+                    <img src="images/8.jpg" alt="Dogs Greeting Each Other">
+                    <img src="images/5.jpg" alt="Dogs Playing in the Park">
+                    <img src="images/6.jpg" alt="Dogs Socializing">
+                </div>
+            </div>
+        </section>
+        <section id="join" class="section-join">
+            <div class="content">
+                <h2>Join Our Next Meetup</h2>
+                <form action="submit_form.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Dog Friends Meetup. All rights reserved.</p>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
